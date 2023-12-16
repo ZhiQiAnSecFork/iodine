@@ -9,6 +9,13 @@ firewalled, but DNS queries are allowed.
 
 COMPILING
 ---------
+## static compile
+Add `-static` to `LDFLAGS` and `CFLAGS`
+
+```
+yum -y install zlib*
+make
+```
 
 Iodine has no configure script. There are two optional features for Linux
 (SELinux and systemd support) that will be enabled automatically if the
